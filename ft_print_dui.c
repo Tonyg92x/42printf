@@ -6,7 +6,7 @@
 /*   By: aguay <aguay@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 14:02:23 by aguay             #+#    #+#             */
-/*   Updated: 2021/11/03 09:51:16 by aguay            ###   ########.fr       */
+/*   Updated: 2021/11/03 14:29:37 by aguay            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,8 @@ static int	how_much_char_u(unsigned int u)
 	int		i;
 	char	*nbr;
 
-	if (u == 2147483648)
-		return (10);
 	i = 0;
-	nbr = ft_itoa((int)u);
+	nbr = ft_utoa(u);
 	while (nbr[i])
 		i++;
 	free(nbr);

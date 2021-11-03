@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_utoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aguay <aguay@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 14:52:44 by aguay             #+#    #+#             */
-/*   Updated: 2021/11/03 14:17:41 by aguay            ###   ########.fr       */
+/*   Updated: 2021/11/03 14:30:35 by aguay            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static int	how_much_digit(int n)
+static int	how_much_digit(unsigned int n)
 {
 	int	retour;
 
@@ -25,7 +25,7 @@ static int	how_much_digit(int n)
 	return (retour);
 }
 
-static char	*positif(char *retour, int n)
+static char	*positif(char *retour, unsigned int n)
 {
 	int		i;
 	int		i_retour;
@@ -50,28 +50,7 @@ static char	*positif(char *retour, int n)
 	return (retour);
 }
 
-static char	*negatif(char *retour, int n)
-{
-	int		i;
-	int		i_retour;
-	char	str[14];
-
-	i = 0;
-	i_retour = 0;
-	retour[i_retour++] = '-';
-	while (n > 0)
-	{
-		str[i] = (n % 10) + 48;
-		n = n / 10;
-		i++;
-	}
-	while (i-- > 0)
-		retour[i_retour++] = str[i];
-	retour[i_retour] = '\0';
-	return (retour);
-}
-
-static char	*limit_check(int n)
+static char	*limit_check(unsigned int n)
 {
 	char	*retour;
 
@@ -84,11 +63,12 @@ static char	*limit_check(int n)
 		retour [1] = '\0';
 		return (retour);
 	}
-	if (n == -2147483648)
+	if (n == 4294967295)
 	{
-		retour = ft_strdup("-2147483648");
+		retour = malloc(11);
 		if (!retour)
 			return (NULL);
+		retour = "4294967295";
 		return (retour);
 	}
 	return (NULL);
@@ -98,7 +78,7 @@ static char	*limit_check(int n)
 //	Alloue et retourne une chaine de 
 //	caractere reprèsentant l'integer 
 //	recu en argument.
-char	*ft_itoa(int n)
+char	*ft_utoa(unsigned int n)
 {
 	char	*retour;
 
@@ -111,14 +91,6 @@ char	*ft_itoa(int n)
 		if (!retour)
 			return (NULL);
 		retour = positif(retour, n);
-	}
-	else
-	{
-		n = -n;
-		retour = malloc(how_much_digit(n) + 2);
-		if (!retour)
-			return (NULL);
-		retour = negatif(retour, n);
 	}
 	return (retour);
 }

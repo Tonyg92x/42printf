@@ -6,7 +6,7 @@
 /*   By: aguay <aguay@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 07:19:31 by aguay             #+#    #+#             */
-/*   Updated: 2021/11/03 09:50:11 by aguay            ###   ########.fr       */
+/*   Updated: 2021/11/03 14:23:28 by aguay            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,4 +33,5 @@ int		ft_print_chars(va_list s, int count, char type, int *retour);
 char	*ft_itoa(int n);
 char	*ft_strdup(const char *src);
 size_t	ft_strlen(const char *str);
+char	*ft_utoa(unsigned int n);
 #endif
