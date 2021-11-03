@@ -6,13 +6,13 @@
 /*   By: aguay <aguay@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 13:18:48 by aguay             #+#    #+#             */
-/*   Updated: 2021/11/03 09:34:32 by aguay            ###   ########.fr       */
+/*   Updated: 2021/11/03 09:51:29 by aguay            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static int	ft_longlimit(unsigned long long p, int *ratour,char *base)
+static int	ft_longlimit(unsigned long long p, int *ratour, char *base)
 {
 	if (p == LONG_MAX || p == ULONG_MAX)
 	{
@@ -31,7 +31,6 @@ static int	ft_longlimit(unsigned long long p, int *ratour,char *base)
 	}
 	return (0);
 }
-
 
 static void	ft_print_x(char *base, unsigned long long p, int *ratour)
 {
@@ -80,15 +79,15 @@ static void	ft_print_p(char *base, unsigned long long p, int *ratour)
 //	un pointeur.
 int	ft_puthex(va_list s, int count, char type, int *ratour)
 {
-	char			*base;
-	unsigned int	p;
+	char				*base;
+	unsigned long long	p;
 
 	p = va_arg(s, unsigned long long);
 	base = "0123456789abcdef";
 	if (type == 'X')
 		base = "0123456789ABCDEF";
 	if (type == 'x' || type == 'X')
-		ft_print_x(base, p, ratour);
+		ft_print_x(base, (unsigned int)p, ratour);
 	else if (type == 'p')
 		ft_print_p(base, p, ratour);
 	count++;

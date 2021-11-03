@@ -6,7 +6,7 @@
 /*   By: aguay <aguay@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 14:13:22 by aguay             #+#    #+#             */
-/*   Updated: 2021/11/02 10:04:03 by aguay            ###   ########.fr       */
+/*   Updated: 2021/11/03 09:49:48 by aguay            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,5 +59,3 @@ int	ft_print_chars(va_list s, int count, char type, int *retour)
 	count++;
 	return (count);
 }
-
-
