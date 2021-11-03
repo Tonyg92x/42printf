@@ -1,43 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_unsigned_fd.c                            :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aguay <aguay@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/01 13:44:56 by aguay             #+#    #+#             */
-/*   Updated: 2021/11/02 11:13:10 by aguay            ###   ########.fr       */
+/*   Created: 2021/09/18 11:37:25 by aguay             #+#    #+#             */
+/*   Updated: 2021/11/02 09:49:41 by aguay            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-//	Ecrit dans fd un unsigned int n.
-void	ft_putnbr_unsigned_fd(unsigned int n, int fd)
+//	NE PAS OUBLIER DE FREE
+//	Allocate exactly the right space of src string
+//	into an other string using malloc.
+char	*ft_strdup(const char *src)
 {
-	int		i;
-	char	str[13];
+	int		count;	
+	char	*dest;
 
-	i = 0;
-	if (n == 0)
+	dest = malloc(ft_strlen(src) + 1);
+	if (dest == NULL)
+		return (NULL);
+	count = 0;
+	while (src[count])
 	{
-		write(fd, "0", 1);
-		return ;
+		dest[count] = src[count];
+		count++;
 	}
-	if (n == 2147483647)
-	{
-		write(fd, "2147483647", 10);
-		return ;
-	}
-	while (n != 0)
-	{
-		str[i++] = '0' + n % 10;
-		n = n / 10;
-	}
-	i--;
-	while (i > -1)
-	{
-		write(fd, &str[i], 1);
-		i--;
-	}
+	dest[count] = '\0';
+	return (dest);
 }

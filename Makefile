@@ -1,6 +1,6 @@
 NAME		= libftprintf.a
 
-SCRS		= ft_print_chars.c ft_print_dui.c ft_printf.c ft_putchar_fd.c ft_puthex.c ft_putnbr_fd.c ft_putnbr_unsigned_fd.c
+SCRS		= ft_print_chars.c ft_print_dui.c ft_printf.c ft_putchar_fd.c ft_puthex.c ft_putnbr_fd.c ft_putnbr_unsigned_fd.c ft_itoa.c ft_strdup.c ft_strlen.c
 
 OBJS		= ${SCRS:.c=.o}
 
