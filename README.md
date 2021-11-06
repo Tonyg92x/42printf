@@ -33,12 +33,6 @@
 
   <p align="center">
     Home made printf function for c/c++ programming. 42 projets done in 13 hours.
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
   </p>
 </div>
 
