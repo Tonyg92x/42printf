@@ -58,7 +58,7 @@
   This is a 42 project to learn c programming. The goal is to remake a printf function with 
   basic input such as printing the string entered in the first agrument and every time a char
   is %, input the next argument with the right type. The character folowing the % indicate
-  wich datatype to enter. Here is the possibilities of data type :
+  wich datatype to enter. Here is the possibilities of data type : /n
     - %c for char
     - %s for strings
     - %i / %d for int
