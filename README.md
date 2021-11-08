@@ -47,6 +47,9 @@
     <li>
       <a href="#Corrections">Corrections</a>
     </li>
+    <li>
+      <a href="#Authors">Authors</a>
+    </li>
   </ol>
 </details>
 
