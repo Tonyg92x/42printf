@@ -46,7 +46,7 @@
       <a href="#about-the-project">About The Project</a>
     </li>
     <li>
-      <a href="#Installtion">About The Project</a>
+      <a href="#installtion">Installationt</a>
     </li>
   </ol>
 </details>
