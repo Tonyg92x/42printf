@@ -71,7 +71,7 @@ git@github.com:Tonyg92x/42printf.git
  <!-- CORRECTIONS -->
 ## Corrections
 <p align="center">
-  For the project, before getting corrected by our peers and system, we are welcome to test our projects. I used Tripouille tester (https://github.com/Tripouille/printfTester) and paulo-santana tester (https://github.com/paulo-santana/ft_printf_tester). In the future the project may change and these tester may be outdated. 
+  For the project, before submetting my project, I used Tripouille tester (https://github.com/Tripouille/printfTester) and paulo-santana tester (https://github.com/paulo-santana/ft_printf_tester) to test multiple input. In the future the project may change and these tester may be outdated. 
 
 <!-- Authors -->
 ## Authors
