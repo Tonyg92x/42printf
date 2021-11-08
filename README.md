@@ -48,6 +48,9 @@
     <li>
       <a href="#installation">Installation</a>
     </li>
+    <li>
+      <a href="#Corrections">Corrections</a>
+    </li>
   </ol>
 </details>
 
@@ -60,13 +63,16 @@
 <p align="center">
   This is a 42 project to learn c programming. The goal is to remake a printf function with basic input such as printing the string entered in the first agrument and every time a char is %, input the next argument with the right type. The character folowing the % indicate wich datatype to enter. Here is the possibilities of data type : %c for char , %s for strings , %i , %d for int , %u for uinsigned int , %x/X for hexadicimal , %p for pointers , %% for printing a %
 
- <!-- Installation -->
+ <!-- INSTALLATION -->
 ## Installation
 ```markdown
 git@github.com:Tonyg92x/42printf.git
 ```
-  
  
+ <!-- CORRECTIONS -->
+## Corrections
+
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
