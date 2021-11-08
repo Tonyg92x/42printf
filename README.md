@@ -61,7 +61,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 <p align="center">
-  This is a 42 project to learn c programming. The goal is to remake a printf function with basic input such as printing the string entered in the first agrument and every time a char is %, input the next argument with the right type. The character folowing the % indicate wich datatype to enter. Here is the possibilities of data type : %c for char , %s for strings , %i , %d for int , %u for uinsigned int , %x/X for hexadicimal , %p for pointers , %% for printing a %
+  This is a 42 project to learn c programming. The goal is to remake a printf function with basic input. The printf function is simple, if print a string in the console. The difficulty here is that you can send multiple arguments. Every time you add a % in the first argument (string), the character folowing the % indicate wich datatype to enter. Here is the possibilities of data type : %c for char , %s for strings , %i , %d for int , %u for uinsigned int , %x/X for hexadicimal , %p for pointers , %% for printing a %. A good example of usage would be : printf("hi you %s %c", "name", '?'); It is possible to use variable instead of writing the output.
 
  <!-- INSTALLATION -->
 ## Installation
