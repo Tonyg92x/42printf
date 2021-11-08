@@ -32,7 +32,7 @@
 <h3 align="center">ft_printf</h3>
 
   <p align="center">
-    Home made printf function for c/c++ programming. 42 projets done in 13 hours.
+    Home made printf function for c/c++ programming. Project of 42 cursus.
   </p>
 </div>
 
