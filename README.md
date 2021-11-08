@@ -71,8 +71,9 @@ git@github.com:Tonyg92x/42printf.git
   For the project, before getting corrected by our peers and system, we are welcome to test our projects. I used Tripouille tester (https://github.com/Tripouille/printfTester) and paulo-santana tester (https://github.com/paulo-santana/ft_printf_tester). In the future the project may change and these tester may be outdated. 
 
 <!-- Authors -->
-## About The Project
-
+## Authors
+<p align="center">
+  Anthony Guay anthony.guay112@gmail.com
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
