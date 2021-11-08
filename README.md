@@ -59,7 +59,7 @@
 
  <!-- Installation -->
 ## Installation
-'''markdown
+```markdown
 git@github.com:Tonyg92x/42printf.git
 '''
   
