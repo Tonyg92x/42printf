@@ -56,7 +56,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 <p align="center">
   This is a 42 project to learn c programming. The goal is to remake a printf function. The printf function print a string in the console. It can take X number of arguments (0 to ???). Every time you add a % in the string to print, the character folowing the % indicate wich datatype to enter. You have to write the variable as argument following the string. Here is the possibilities of data type : %c for char , %s for strings , %i and %d for int , %u for uinsigned int , %x && %X for hexadicimal , %p for pointers , %% for printing a %. A good example of usage would be : printf("hi you %s %c", "name", '?'); It is possible to use variable instead of writing the output.
  <p align  ="center">
